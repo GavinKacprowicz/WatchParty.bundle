@@ -30,3 +30,7 @@ def ValidatePrefs():
 @route(PREFIX + '/main')
 def MainMenu():
     return
+
+@route('/watchparty/webohook/{data}', 'POST')
+def webhook(data):
+    Log.Debug(str(data))
