@@ -1,5 +1,5 @@
 TITLE = 'Watch Party'
-PREFIX = '/video/watchparty'
+PREFIX = '/watchparty'
 
 ART = 'art-default.jpg'
 ICON = ''
@@ -31,6 +31,6 @@ def ValidatePrefs():
 def MainMenu():
     return
 
-@route('/watchparty/webohook/{data}', 'POST')
+@route(PREFIX + '/webhook/{data}', 'POST')
 def webhook(data):
     Log.Debug(str(data))
