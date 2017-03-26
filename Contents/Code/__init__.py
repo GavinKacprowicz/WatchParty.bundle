@@ -1,5 +1,5 @@
 TITLE = 'Watch Party'
-PREFIX = '/watchparty'
+PREFIX = '/video/watchparty'
 
 ART = 'art-default.jpg'
 ICON = ''
